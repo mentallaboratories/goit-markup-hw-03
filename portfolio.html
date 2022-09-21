@@ -8,7 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
@@ -16,17 +18,17 @@
         <header class="header"> 
         <!--top navigation-->
             <nav>
-                <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+                <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
                 <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link link" href="./index.html">Студія</a></li>
-                    <li class="nav-item"><a class="nav-link link current " href="./portfolio.html">Портфоліо</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="">Контакти</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Студія</a></li>
+                    <li class="nav-item"><a class="nav-link current " href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
                 </ul>
             </nav>
         <!--Contacts-->
-            <ul class="contacts list">
-                <li class="contacts-item"><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts-item"><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="contacts">
+                <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>        
         </header>
 
@@ -38,7 +40,7 @@
                 <h1 class="visually-hidden">Portfolio gallery</h1>
 
                 <!--portfolio filter buttons -->
-                <ul class="portfolio-filter list">
+                <ul class="portfolio-filter">
                     <li class="portfolio-filter-item"><button class="portfolio-filter-button active" type="button">Усі</button></li>
                     <li class="portfolio-filter-item"><button class="portfolio-filter-button" type="button">Веб-сайт</button></li>
                     <li class="portfolio-filter-item"><button class="portfolio-filter-button" type="button">Додатки</button></li>
@@ -46,7 +48,7 @@
                     <li class="portfolio-filter-item"><button class="portfolio-filter-button" type="button">Маркетинг</button></li>
                 </ul>
                 <!--portfolio gallery-->
-                <ul class="portfolio-gallery list">
+                <ul class="portfolio-gallery">
                     <li class="portfolio-gallery-item">
                         <img class="portfolio-gallery-image" src="./images/portfolio-gallery1.jpg" width="370" alt="Gallery image 1">
                         <h2 class="portfolio-gallery-title">Технокряк</h2>
@@ -102,14 +104,14 @@
 
        <!--footer-->
         <footer class="footer">
-            <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+            <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
             <address style="font-style: normal;">
                 <ul class="address-list list">
-                    <li class="address-list-item"><a class="address-map link" href="https://goo.gl/maps/QkunexmJ6CB4zxnH8"
+                    <li class="address-list-item"><a class="address-map" href="https://goo.gl/maps/QkunexmJ6CB4zxnH8"
                             target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="address-list-item"><a class="address-contacts link"
+                    <li class="address-list-item"><a class="address-contacts"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="address-list-item"><a class="address-contacts link" href="tel:+380961111111">+38 096 111 11
+                    <li class="address-list-item"><a class="address-contacts" href="tel:+380961111111">+38 096 111 11
                             11</a></li>
                 </ul>
             </address>

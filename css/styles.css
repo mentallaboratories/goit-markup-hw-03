@@ -10,6 +10,31 @@
     --section-background-color:#2F303A;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!! RESET CSS !!!!!!!!!!!!!!!!!!!!!!*/
+P,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin:0;
+}
+
+ul, ol{
+     margin:0;
+     padding-left:0;
+     list-style: none;
+}
+
+address{
+    font-style: none;
+}
+
+button{
+    cursor:pointer
+}
+
 /* body style */
 body{
     background-color: var(--background-color);
@@ -22,14 +47,8 @@ body{
 }
 
 
-/* no link decoration */
-.link{
-text-decoration: none;
-}
-/* no list decoration */
-.list{
-list-style: none;
-}
+
+
 
 
 
