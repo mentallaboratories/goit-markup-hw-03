@@ -57,11 +57,8 @@ body{
 
 
 
-
-
-
-
-/* this class is for hiding */
+/* !!!!!!!  HIDE  IT  WELL  !!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -75,13 +72,14 @@ body{
     margin: -1px;
 }
 
-
+/*!!!!!!!!!!! GLOBAL CLASSES   !!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .container{
     width:1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid #FF0000;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 
 .section{
@@ -92,23 +90,50 @@ body{
 .no-padding-top{
     padding-top: 0;
 }
-/* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!! */
+
+
+.flex-space-between{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .header{
     padding-top:24px;
     padding-bottom:25px;
 }
+
+/*arrange logo nav contacts */
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/*arrange logo nav */
+.nav-menu{
+    display:flex;
+    gap:93px;
+    align-items: center;
+}
+
 .logo{
     font-family: 'Raleway' , sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
-
-    display: block;
 }
 .accent{
     color:var(--accent-color)
 }
+/* arrange elements of nav contacts */
+.nav-list,
+.contacts{
+    display:flex;
+    gap:50px;
+}
+
 .nav-link, 
 .contacts-link{
     font-weight: 500;
@@ -130,7 +155,8 @@ body{
 .contacts-link:focus {
     color: var(--accent-color);
 }
-/* !!!!!!---------hero-----------!!!!!! */
+/* !!!!!!---------hero-----------!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero{
     background-color: var(--section-background-color);
     padding-top: 200px;
@@ -159,10 +185,19 @@ body{
 
     display:block;
     margin: 0 auto;
-    padding: 10px 32px;
     min-width: 216px;
+    height: 50px;
+    border-radius: 5px;
+    border-style:none;
 }
-/* !!!!!-------features---------!!!!!!!! */
+.hero-button:hover,
+.hero-button:focus{
+    color:var(--accent-color);
+    background-color: var(--background-color);
+}
+/* !!!!!!!!!!!   FEATURES       !!!!!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+
 
 .features-title{
     font-size: 14px;
@@ -175,7 +210,8 @@ body{
 .feature-text{
     line-height: 1.71;
 }
-/* !!!!!-------activity---------!!!!!!! */
+/* !!!!!!!!!!!   ACTIVITY     !!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .section-title{
     font-size: 36px;
     line-height: 1.17;
@@ -184,7 +220,10 @@ body{
 
     margin-bottom: 50px;
 }
-/* !!!-------team------------!!!!!!!! */
+
+/* !!!!!!!!!   OUR  TEAM     !!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 
 .team-member-about{
     padding-top: 30px;
