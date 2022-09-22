@@ -198,7 +198,9 @@ body{
 /* !!!!!!!!!!!   FEATURES       !!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 
-
+.features-item{
+    width: calc((100%-90px)/4);
+}
 .features-title{
     font-size: 14px;
     line-height: 1.15;
@@ -221,13 +223,25 @@ body{
     margin-bottom: 50px;
 }
 
+
 /* !!!!!!!!!   OUR  TEAM     !!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
-.team-member-about{
-    padding-top: 30px;
+
+.team-member-item{
     padding-bottom: 30px;
+}
+
+.team-member-image {
+    margin-bottom: 30px;
+}
+
+.team-member-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .team-member-name{
@@ -236,7 +250,6 @@ body{
     line-height: 1.11;
     color:var(--title-text-color);
 
-    margin-bottom: 10px;
 
 }
 .team-member-position{
@@ -252,14 +265,19 @@ body{
 }
 .footer .logo {
     color: var(--light-text-color);
-
+    display:block;
     margin-bottom: 20px;
+}
+
+.address-list{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
 }
 
 .address-list-item {
     line-height: 1.7;
 
-    margin-bottom: 9px;
 }
 
 .address-contacts{
