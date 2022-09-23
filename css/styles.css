@@ -83,16 +83,13 @@ body{
 }
 
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .no-padding-top{
     padding-top: 0;
-}
-
-.no-padding{
-    padding: 0;
 }
 
 .flex-gap30{
@@ -103,8 +100,7 @@ body{
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .header{
-    padding-top:24px;
-    padding-bottom:25px;
+    padding:24px 0;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -161,9 +157,13 @@ body{
 }
 /* !!!!!!---------hero-----------!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.hero-style {
+    padding: 0;
+    background-color: var(--section-background-color);
+}
 .hero{
     padding: 200px 237px;
-    background-color: var(--section-background-color);
+    
 }
 
 .hero-title{
