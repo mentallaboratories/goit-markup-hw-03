@@ -42,6 +42,7 @@ a{
 
 img{
     display: block;
+    margin: 0;
 }
 
 /*!!!!!!!!!!!!!!!!! body style !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -79,7 +80,6 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }
 
 .section{
@@ -91,13 +91,17 @@ body{
     padding-top: 0;
 }
 
-
+.flex-gap30{
+    display:flex;
+    gap:30px;
+}
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .header{
     padding-top:24px;
     padding-bottom:25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /*arrange logo nav contacts */
@@ -154,10 +158,10 @@ body{
 /* !!!!!!---------hero-----------!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero{
+    padding: 200px 237px;
     background-color: var(--section-background-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
+
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -167,8 +171,8 @@ body{
     text-transform: uppercase;
     color: var(--light-text-color);
 
+    margin-bottom: 30px;
     max-width: 696px;
-    margin:0 auto 30px;
 }
 .hero-button{
     font-weight: 700;
@@ -194,10 +198,7 @@ body{
 /* !!!!!!!!!!!   FEATURES       !!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 
-.features-list{
-    display: flex;
-    gap:30px;
-}
+
 .features-item{
     width: calc((100%-90px)/4);
 }
@@ -224,10 +225,6 @@ body{
     margin-bottom: 50px;
 }
 
-.activity-list{
-    display: flex;
-    gap:30px;
-}
 
 .activity-item {
     width: calc((100%-60px)/3);
@@ -236,10 +233,10 @@ body{
 /* !!!!!!!!!   OUR  TEAM     !!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.team-member-list{
-    display:flex;
-    gap:30px;
+.transparent{
+    background-color: transparent;
 }
+
 
 .team-member-item{
     padding-bottom: 30px;
@@ -308,10 +305,7 @@ body{
 }
 
 /*!!!--------PORTFOLIO------------!!!*/
-.portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .portfolio-filter{
    margin-bottom: 34px; 
    display:flex;
@@ -332,24 +326,27 @@ body{
     padding: 6px 22px;
 }
 
-.portfolio-gallery{
-    display:flex;
-    /* gap:30px; */
-    flex-wrap: wrap;
-}
-
-.portfolio-gallery-item{
-    width: calc((100%-60px)/3);
-}
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
     background-color: var(--accent-color);
     color: var(--light-text-color);
 }
-.active{
+
+.active {
     background-color: var(--accent-color);
     color: var(--light-text-color);
 }
+
+/* !!!!!!   GALLERY TABLE    !!!!!!!!! */
+
+.portfolio-gallery{
+    flex-wrap: wrap;
+}
+
+.portfolio-gallery-item{
+    border-bottom: 1px solid #EEEEEE;
+}
+
 
 .portfolio-gallery-title{
     font-weight: 700;
@@ -363,8 +360,8 @@ body{
 
 .portfolio-gallery-content{
     padding: 20px 24px;
-    max-width: 370px;
 }
+
 
 .portfolio-gallery-text{
     font-size: 16px;
