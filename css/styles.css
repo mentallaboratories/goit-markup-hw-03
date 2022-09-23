@@ -92,10 +92,6 @@ body{
 }
 
 
-.flex-space-between{
-    display:flex;
-    justify-content:space-between;
-}
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -198,6 +194,10 @@ body{
 /* !!!!!!!!!!!   FEATURES       !!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 
+.features-list{
+    display: flex;
+    gap:30px;
+}
 .features-item{
     width: calc((100%-90px)/4);
 }
@@ -214,6 +214,7 @@ body{
 }
 /* !!!!!!!!!!!   ACTIVITY     !!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .section-title{
     font-size: 36px;
     line-height: 1.17;
@@ -223,14 +224,26 @@ body{
     margin-bottom: 50px;
 }
 
+.activity-list{
+    display: flex;
+    gap:30px;
+}
+
+.activity-item {
+    width: calc((100%-60px)/3);
+}
 
 /* !!!!!!!!!   OUR  TEAM     !!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
+.team-member-list{
+    display:flex;
+    gap:30px;
+}
 
 .team-member-item{
     padding-bottom: 30px;
+    width:calc((100%-90px)/4);
 }
 
 .team-member-image {
@@ -295,9 +308,15 @@ body{
 }
 
 /*!!!--------PORTFOLIO------------!!!*/
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-filter{
-   max-width: 575px;
    margin-bottom: 34px; 
+   display:flex;
+   justify-content: center;
+   gap:9px;
 
 }
 .portfolio-filter-button{
@@ -306,6 +325,21 @@ body{
     line-height: 1.62;
     color: #212121;
     background-color: #F5F4FA;
+
+    border-style: none;
+    border-radius: 5px;
+    min-width:73px;
+    padding: 6px 22px;
+}
+
+.portfolio-gallery{
+    display:flex;
+    /* gap:30px; */
+    flex-wrap: wrap;
+}
+
+.portfolio-gallery-item{
+    width: calc((100%-60px)/3);
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
